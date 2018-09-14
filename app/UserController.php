@@ -39,7 +39,7 @@ class UserController
 		$cart->addProductToCart($product);
 		$product->name = 'Apple';
 		$product->price = 4.91;
-//		$cart->removeProduct($product);
+		$cart->removeProduct($product);
 		var_dump($cart->totalPrice);
 		die('Please correct the request!');
 	}

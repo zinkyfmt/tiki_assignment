@@ -40,12 +40,6 @@ class Cart
 		}
 	}
 
-	public function getShoppingCartByEmail($email) {
-		if ($email == $this->_user) {
-			return $this;
-		}
-		return false;
-	}
 
 	public function getProductListInCart() {
 		return $this->_products;
